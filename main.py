@@ -3,6 +3,7 @@ from random    import randrange
 from nice_json import json_get, json_print_pretty
 from os.path   import isfile
 from rules     import rules, logfile
+from notify    import notify
 
 
 '''
@@ -105,7 +106,9 @@ def save_to_log(location, day, log):
     new_log = { 'Log': log+[result] }       # create and save the new log
 
     with open(logfile, 'w') as f:
-        f.write(json_print_pretty(new_log))
+        # if the file is written successfully, push a notification to Slack
+        if f.write(json_print_pretty(new_log)):
+            notify(result)
 
 
 if __name__ == '__main__':
