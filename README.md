@@ -46,3 +46,5 @@ To modify, change, and delete past events, simply make changes and/or delete ent
 $ python2.7 main.py --help
 ```
 
+## Rights
+All rights and posession legally, credit-abily or otherwise, belongs to a Mr. James Boynton of Providence, RI
