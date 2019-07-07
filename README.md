@@ -48,3 +48,4 @@ $ python2.7 main.py --help
 
 ## Rights
 All rights and posession legally, credit-abily or otherwise, belongs to a Mr. James Boynton of Providence, RI
+Code written by Mitchell Woodbine.
